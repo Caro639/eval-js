@@ -69,3 +69,10 @@ numberOfCitations.insertAdjacentHTML(
   "beforeend",
   `<p>Nombres de citations enregistrés : ${nombresCitations}</p>`
 );
+
+// citation du jour
+let citationDuJour = document.querySelector("#daily-quote");
+
+let citations = localStorage.getItem("citationsArrayFromStorage");
+citations = JSON.parse(citations) || [];
+console.log(citations);
